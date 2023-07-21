@@ -10,6 +10,7 @@
         android:id="@+id/size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
         android:text="@string/txt_titulo_aplicativo_lista_vip_android"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -17,84 +18,91 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/primeironome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:text="@string/txt_hint_edit_primeiro_nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/size" />
+        app:layout_constraintTop_toBottomOf="@+id/size"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/sobrenome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/txt_hint_edit_sobrenome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/primeironome"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/curso"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:text="@string/txt_hint_edit_curso_desejado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome"
+        tools:ignore="LabelFor,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/contato"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="16dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/txt_hint_edit_telefone_de_contato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/curso"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLimpar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="120dp"
         android:text="@string/txt_button_limpar"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalvar"
+        app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintTop_toBottomOf="@+id/contato"
+        app:layout_constraintVertical_bias="0.434" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="36dp"
         android:text="@string/txt_button_salvar"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
-        app:layout_constraintVertical_bias="0.464" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnFinalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -103,6 +111,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/contato" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
