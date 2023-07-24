@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     //pessoa
     Pessoa pessoa;
     Pessoa outrapessoa;
+
+    String dadosPessoa;
+    String dadoOutraPessoa;
     //Fim Pessoa
 
     //======================================================================================
@@ -107,7 +110,23 @@ public class MainActivity extends AppCompatActivity {
         outrapessoa.setCursoDesejado("Java");
         outrapessoa.setTelefoneContato("(19) 98143-4732");
 
-int parada =0;
+        dadosPessoa = " Primeriro Nome: ";
+            dadosPessoa += pessoa.getPrimeiroNome();
+
+        dadosPessoa += " Sobrenome: ";
+            dadosPessoa += pessoa.getSobreNome();
+
+        dadosPessoa += " Curso desejado: ";
+            dadosPessoa += pessoa.getCursoDesejado();
+
+        dadosPessoa += " Telefone de Contato: ";
+            dadosPessoa += pessoa.getTelefoneContato();
+
+        int parada = 0;
+
+
+
+
         //======================================================================================
 
 
