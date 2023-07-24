@@ -8,12 +8,7 @@ public class Pessoa {
     private String telefoneContato;
 
 
-    public Pessoa(){
-
-
-
-
-    }
+    public Pessoa(){}
 
     public String getPrimeiroNome() {
         return primeiroNome;
