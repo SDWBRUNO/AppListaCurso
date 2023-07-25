@@ -49,4 +49,15 @@ public class Fruta {
     public void setBanana(String banana) {
         this.banana = banana;
     }
+
+    @Override
+    public String toString() {
+        return "Fruta{" +
+                "fruta='" + fruta + '\'' +
+                ", abacate='" + abacate + '\'' +
+                ", kaki='" + kaki + '\'' +
+                ", mamao='" + mamao + '\'' +
+                ", banana='" + banana + '\'' +
+                '}';
+    }
 }

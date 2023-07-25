@@ -41,4 +41,14 @@ public class Produtos {
     public void setEntraga(String entraga) {
         this.entraga = entraga;
     }
+
+    @Override
+    public String toString() {
+        return "Produtos{" +
+                "produtos='" + produtos + '\'' +
+                ", valor='" + valor + '\'' +
+                ", peso='" + peso + '\'' +
+                ", entraga='" + entraga + '\'' +
+                '}';
+    }
 }

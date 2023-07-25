@@ -3,11 +3,14 @@ package devandroid.bruno.applistacurso;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.bruno.applistacurso.model.Calendario;
 import devandroid.bruno.applistacurso.model.Curso;
 import devandroid.bruno.applistacurso.model.Fruta;
+import devandroid.bruno.applistacurso.model.Meunome;
 import devandroid.bruno.applistacurso.model.Musica;
+import devandroid.bruno.applistacurso.model.Objetos;
 import devandroid.bruno.applistacurso.model.Periferico;
 import devandroid.bruno.applistacurso.model.Pessoa;
 import devandroid.bruno.applistacurso.model.Produtos;
@@ -26,9 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Cursos
     Curso curso;
-    Curso python;
-    Curso android;
-    Curso java;
+
     //Fim Curso
 
     //======================================================================================
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     Fruta fruta;
     Fruta banana;
     Fruta abacate;
-    Fruta melao;
+    Fruta mamao;
     Fruta kaki;
 
     //======================================================================================
@@ -88,8 +89,22 @@ public class MainActivity extends AppCompatActivity {
 
     //======================================================================================
 
+    //Objetos
+
+    Objetos garrafa;
+    Objetos celular;
+    Objetos quadro;
+    Objetos vaso;
+    Objetos copo;
 
 
+    //======================================================================================
+
+    //Meunome
+
+    Meunome meunome;
+
+    //======================================================================================
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         outrapessoa.setCursoDesejado("Java");
         outrapessoa.setTelefoneContato("(19) 98143-4732");
 
-        dadosPessoa = " Primeriro Nome: ";
+/*        dadosPessoa = " Primeriro Nome: ";
             dadosPessoa += pessoa.getPrimeiroNome();
 
         dadosPessoa += " Sobrenome: ";
@@ -120,9 +135,10 @@ public class MainActivity extends AppCompatActivity {
             dadosPessoa += pessoa.getCursoDesejado();
 
         dadosPessoa += " Telefone de Contato: ";
-            dadosPessoa += pessoa.getTelefoneContato();
+            dadosPessoa += pessoa.getTelefoneContato();*/
 
-        int parada = 0;
+        Log.i("POOAndroid",pessoa.toString());
+        Log.i("POOAndroid",outrapessoa.toString());
 
 
 
@@ -132,24 +148,31 @@ public class MainActivity extends AppCompatActivity {
 
         //Classe Curso
         curso = new Curso();
-        python = new Curso();
-        java = new Curso();
-        android = new Curso();
 
         //settes
         curso.setJava("java");
         curso.setAndroid("Android");
         curso.setPython("Python");
 
+        Log.i("POOCurso",curso.toString());
+
         //======================================================================================
 
         //Frutas // Setter
         fruta = new Fruta();
-        melao = new Fruta();
+        mamao = new Fruta();
         kaki = new Fruta();
         banana = new Fruta();
         abacate = new Fruta();
 
+
+        fruta.setFruta("Frutas");
+        fruta.setBanana("Banana nanica");
+        fruta.setAbacate("Abacate");
+        fruta.setKaki("kaki");
+        fruta.setMamao("Mamao");
+
+        Log.i("POOFrutas",fruta.toString());
         //======================================================================================
 
         //Periferico / Setter
@@ -163,6 +186,9 @@ public class MainActivity extends AppCompatActivity {
         periferico.setMouse("Mouse");
         periferico.setTeclado("Teclado");
         periferico.setMousepad("MousePad");
+
+        Log.i("POOPerifericos",periferico.toString());
+
 
         //======================================================================================
 
@@ -178,6 +204,8 @@ public class MainActivity extends AppCompatActivity {
         musica.setForro("Forro");
         musica.setRock("Rock");
         musica.setSetanejo("Sertanejo");
+
+        Log.i("Musicas",musica.toString());
 
         //======================================================================================
 
@@ -198,6 +226,8 @@ public class MainActivity extends AppCompatActivity {
         outroproduto.setValor("R$ 3.500");
         outroproduto.setPeso("10kg");
         outroproduto.setEntraga("7 Dias");
+
+        Log.i("POOProdutos",produtos.toString());
 
         //======================================================================================
 
@@ -228,10 +258,40 @@ public class MainActivity extends AppCompatActivity {
         novembro.setNovembro("30 Dias");
         dezembro.setDezembro("31 Dias");
 
+        Log.i("POOCAlendario",quanto_dia_tem_em_cada_mes.toString());
+
 
         //======================================================================================
 
+        //Objetos // Getter and Setter
 
+        vaso = new Objetos();
+        garrafa = new Objetos();
+        celular = new Objetos();
+        quadro = new Objetos();
+        copo = new Objetos();
+
+        vaso.setVaso(" Vaso de Porcelana");
+        garrafa.setGarrafa(" Coca Cola");
+        celular.setCelular(" Samsung S23");
+        quadro.setQuadro(" Dragon Ball Super");
+        copo.setCopo(" Copo de Vidro");
+
+        Log.i("POOObjetos",vaso.toString());
+
+
+        //======================================================================================
+
+        //MeuNome
+
+        meunome = new Meunome();
+
+        meunome.setMeunome("Bruno");
+
+        Log.i("POOMeunome",meunome.toString());
+
+
+        //======================================================================================
 
 
 

@@ -31,4 +31,14 @@ public class Curso {
     public void setAndroid(String android) {
         this.android = android;
     }
+
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "java='" + java + '\'' +
+                ", python='" + python + '\'' +
+                ", android='" + android + '\'' +
+                '}';
+    }
 }
+

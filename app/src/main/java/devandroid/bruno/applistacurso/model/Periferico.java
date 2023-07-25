@@ -40,4 +40,14 @@ public class Periferico {
     public void setMousepad(String mousepad) {
         this.mousepad = mousepad;
     }
+
+    @Override
+    public String toString() {
+        return "Periferico{" +
+                "Periferico='" + Periferico + '\'' +
+                ", mouse='" + mouse + '\'' +
+                ", teclado='" + teclado + '\'' +
+                ", mousepad='" + mousepad + '\'' +
+                '}';
+    }
 }

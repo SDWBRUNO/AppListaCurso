@@ -52,4 +52,15 @@ public class Musica {
     public void setSetanejo(String setanejo) {
         this.sertanejo = setanejo;
     }
+
+    @Override
+    public String toString() {
+        return "Musica{" +
+                "musica='" + musica + '\'' +
+                ", rock='" + rock + '\'' +
+                ", eletronica='" + eletronica + '\'' +
+                ", forro='" + forro + '\'' +
+                ", sertanejo='" + sertanejo + '\'' +
+                '}';
+    }
 }

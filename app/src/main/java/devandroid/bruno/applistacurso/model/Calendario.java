@@ -115,4 +115,22 @@ public class Calendario {
     public void setDezembro(String dezembro) {
         this.dezembro = dezembro;
     }
+
+    @Override
+    public String toString() {
+        return "Calendario{" +
+                "janeiro='" + janeiro + '\'' +
+                ", fevereiro='" + fevereiro + '\'' +
+                ", marco='" + marco + '\'' +
+                ", abril='" + abril + '\'' +
+                ", maio='" + maio + '\'' +
+                ", junho='" + junho + '\'' +
+                ", julho='" + julho + '\'' +
+                ", agosto='" + agosto + '\'' +
+                ", setembre='" + setembre + '\'' +
+                ", outubro='" + outubro + '\'' +
+                ", novembro='" + novembro + '\'' +
+                ", dezembro='" + dezembro + '\'' +
+                '}';
+    }
 }
