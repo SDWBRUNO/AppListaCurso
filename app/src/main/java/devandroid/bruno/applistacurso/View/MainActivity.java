@@ -1,16 +1,15 @@
-package devandroid.bruno.applistacurso;
+package devandroid.bruno.applistacurso.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 
+import devandroid.bruno.applistacurso.R;
 import devandroid.bruno.applistacurso.model.Calendario;
 import devandroid.bruno.applistacurso.model.Curso;
 import devandroid.bruno.applistacurso.model.Fruta;
-import devandroid.bruno.applistacurso.model.Meunome;
 import devandroid.bruno.applistacurso.model.Musica;
-import devandroid.bruno.applistacurso.model.Objetos;
 import devandroid.bruno.applistacurso.model.Periferico;
 import devandroid.bruno.applistacurso.model.Pessoa;
 import devandroid.bruno.applistacurso.model.Produtos;
@@ -88,21 +87,6 @@ public class MainActivity extends AppCompatActivity {
     Calendario dezembro;
 
     //======================================================================================
-
-    //Objetos
-
-    Objetos garrafa;
-    Objetos celular;
-    Objetos quadro;
-    Objetos vaso;
-    Objetos copo;
-
-
-    //======================================================================================
-
-    //Meunome
-
-    Meunome meunome;
 
     //======================================================================================
 
@@ -263,35 +247,6 @@ public class MainActivity extends AppCompatActivity {
 
         //======================================================================================
 
-        //Objetos // Getter and Setter
-
-        vaso = new Objetos();
-        garrafa = new Objetos();
-        celular = new Objetos();
-        quadro = new Objetos();
-        copo = new Objetos();
-
-        vaso.setVaso(" Vaso de Porcelana");
-        garrafa.setGarrafa(" Coca Cola");
-        celular.setCelular(" Samsung S23");
-        quadro.setQuadro(" Dragon Ball Super");
-        copo.setCopo(" Copo de Vidro");
-
-        Log.i("POOObjetos",vaso.toString());
-
-
-        //======================================================================================
-
-        //MeuNome
-
-        meunome = new Meunome();
-
-        meunome.setMeunome("Bruno");
-
-        Log.i("POOMeunome",meunome.toString());
-
-
-        //======================================================================================
 
 
 
